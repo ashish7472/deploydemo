@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:5173' })); // Adjust according to your frontend's URL
+app.use(cors({ origin: 'https://deploydemo-frontend.onrender.com' })); // Adjust according to your frontend's URL
 
 
 // Connect to the database
