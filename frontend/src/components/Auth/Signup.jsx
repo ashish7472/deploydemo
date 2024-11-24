@@ -24,7 +24,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/signup', { ...formData });
+      await axios.post('https://deploydemo-backend.onrender.com/signup', { ...formData });
       toast.success('Signup successful!'); // Toastr success message
       setTimeout(() => {
         navigate('/login'); // Redirect to login page after signup success
