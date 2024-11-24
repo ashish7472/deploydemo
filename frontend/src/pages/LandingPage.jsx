@@ -30,7 +30,7 @@ const LandingPage = () => {
   useEffect(() => {
     const fetchUsersWithSimilarInterests = async () => {
       try {
-        const response = await axios.get('https://deploydemo-backend.onrender.com', {
+        const response = await axios.get('https://deploydemo-backend.onrender.com/getUsersWithSimilarInterests', {
           params: { email: userEmail },
         });
 
