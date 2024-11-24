@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/login', { email, password });
+      const res = await axios.post('https://deploydemo-backend.onrender.com/login', { email, password });
       toast.success('Login successful!'); // Toastr success message
       navigate('/landing', { state: { userName: res.data.name, userEmail: email } });
     } catch (error) {
