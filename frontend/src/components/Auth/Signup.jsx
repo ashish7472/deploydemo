@@ -27,7 +27,7 @@ const Signup = () => {
       await axios.post('https://deploydemo-backend.onrender.com/signup', { ...formData });
       toast.success('Signup successful!'); // Toastr success message
       setTimeout(() => {
-        navigate('/login'); // Redirect to login page after signup success
+        navigate('/'); // Redirect to login page after signup success
       }, 2000); // Delay to ensure toast message shows up before navigation
     } catch (error) {
       console.error(error);
