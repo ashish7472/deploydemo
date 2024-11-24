@@ -18,7 +18,7 @@ const Navbar = () => {
       {/* Left side: CAMPUSCONNECT */}
       <div className="flex items-center justify-center space-x-3 mb-1">
           <img
-            src="../public/images/ccLogo.png" // Replace with the correct path
+            src="/images/ccLogo.png" // Replace with the correct path
             alt="Campus-Connect Logo"
             className="w-16 h-16"
           />
