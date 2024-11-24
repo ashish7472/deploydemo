@@ -16,10 +16,10 @@ const LandingPage = () => {
   const userEmail = location.state?.userEmail || '';
   
   const events = [
-    { title: 'Hackathon', date: 'Nov 25', image: '../public/images/img1.png', description: 'A fun coding event for everyone!' },
-    { title: 'AI Workshop', date: 'Nov 27', image: '../public/images/img2.png', description: 'Learn the basics of Artificial Intelligence.' },
-    { title: 'Coding Contest', date: 'Nov 30', image: '../public/images/img3.png', description: 'Compete against others in a thrilling coding contest.' },
-    { title: 'Web Development Workshop', date: 'Dec 5', image: '../public/images/img4.png', description: 'A workshop on building dynamic websites.' },
+    { title: 'Hackathon', date: 'Nov 25', image: '/images/img1.png', description: 'A fun coding event for everyone!' },
+    { title: 'AI Workshop', date: 'Nov 27', image: '/images/img2.png', description: 'Learn the basics of Artificial Intelligence.' },
+    { title: 'Coding Contest', date: 'Nov 30', image: '/images/img3.png', description: 'Compete against others in a thrilling coding contest.' },
+    { title: 'Web Development Workshop', date: 'Dec 5', image: '/images/img4.png', description: 'A workshop on building dynamic websites.' },
   ];
 
   const filteredUsers = usersWithSimilarInterests.filter(user =>
